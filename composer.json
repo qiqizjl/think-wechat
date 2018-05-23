@@ -12,7 +12,7 @@
         "email": "qiqizjl@qq.com"
     }],
     "autoload": {
-        "prs-4": {
+        "psr-4": {
             "Naixiaoxin\\ThinkWechat": "src/"
         },
         "files": [
