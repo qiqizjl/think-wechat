@@ -1,6 +1,6 @@
 {
     "name": "naixiaoixn/think-wechat",
-    "description": "EasyWechat For Thnkphp5.1+",
+    "description": "EasyWechat For Thnkphp5.1.6+",
     "type": "library",
     "require": {
         "overtrue/wechat": "~4.0",
@@ -10,5 +10,13 @@
     "authors": [{
         "name": "耐小心",
         "email": "qiqizjl@qq.com"
-    }]
+    }],
+    "autoload": {
+        "prs-4": {
+            "Naixiaoxin\\ThinkWechat": "src/"
+        },
+        "files": [
+            "src/helper.php"
+        ]
+    }
 }
