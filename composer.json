@@ -1,0 +1,14 @@
+{
+    "name": "naixiaoixn/think-wechat",
+    "description": "EasyWechat For Thnkphp5.1+",
+    "type": "library",
+    "require": {
+        "overtrue/wechat": "~4.0",
+        "topthink/framework": "~5.1.6"
+    },
+    "license": "MIT",
+    "authors": [{
+        "name": "耐小心",
+        "email": "qiqizjl@qq.com"
+    }]
+}
