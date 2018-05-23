@@ -13,8 +13,8 @@ use EasyWeChat\OfficialAccount\Application as OfficialAccount;
 use EasyWeChat\OpenPlatform\Application as OpenPlatform;
 use EasyWeChat\Payment\Application as Payment;
 use EasyWeChat\Work\Application as Work;
+use Naixiaoxin\ThinkWechat\CacheBridge;
 use think\facade\Config;
-use wechat\CacheBridge;
 
 class AppInit
 {
