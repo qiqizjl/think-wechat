@@ -2,7 +2,7 @@
     "name": "naixiaoxin/think-wechat",
     "description": "EasyWechat For Thnkphp5.1+",
     "type": "library",
-    "keywords": ["wechat", "weixin","easywechat","thinkphp",'think', "sdk"],
+    "keywords": ["wechat", "weixin","easywechat","thinkphp","think", "sdk"],
     "license": "MIT",
     "require": {
         "overtrue/wechat": "~4.0",
