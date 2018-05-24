@@ -1,10 +1,10 @@
 {
     "name": "naixiaoxin/think-wechat",
-    "description": "EasyWechat For Thnkphp5.1.6+",
+    "description": "EasyWechat For Thnkphp5.1+",
     "type": "library",
     "require": {
         "overtrue/wechat": "~4.0",
-        "topthink/framework": "~5.1.6"
+        "topthink/framework": "~5.1"
     },
     "license": "MIT",
     "authors": [{
