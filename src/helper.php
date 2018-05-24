@@ -9,4 +9,7 @@
 //加入Hook
 \think\facade\Hook::add('app_init',\Naixiaoxin\ThinkWechat\Behavior\AppInit::class);
 
-
+//加入Command
+\think\Console::addDefaultCommands([
+    "Naixiaoxin\\ThinkWechat\\Command\\Config",
+]);
