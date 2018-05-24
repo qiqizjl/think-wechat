@@ -67,7 +67,6 @@ class OauthMiddleware
     protected function getTargetUrl($request)
     {
         $param = $request->get();
-        Log::info(json_encode($param));
         if(isset($param['code'])){
             unset($param['code']);
         }
