@@ -16,7 +16,7 @@ return [
          */
         'response_type' => 'array',
         /*
-         * 使用 Laravel 的缓存系统
+         * 使用 ThinkPHP 的缓存系统
          */
         'use_tp_cache'  => true,
         /*
