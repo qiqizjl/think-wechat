@@ -1,4 +1,6 @@
 # thinkphp-wechat
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fqiqizjl%2Fthink-wechat.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fqiqizjl%2Fthink-wechat?ref=badge_shield)
+
 微信SDK For ThinkPHP 5.1+ 基于[overtrue/wechat](https://github.com/overtrue/wechat)
 
 ## 框架要求
@@ -93,3 +95,5 @@ $params['is_new']; // 是不是新的会话（第一次创建 session 时为 tru
 ## License
 
 MIT
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fqiqizjl%2Fthink-wechat.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fqiqizjl%2Fthink-wechat?ref=badge_large)
