@@ -28,7 +28,7 @@ return [
          */
         'log'           => [
             'level' => env('WECHAT_LOG_LEVEL', 'debug'),
-            'file' => env('WECHAT_LOG_FILE', app()->getRuntimePath()."logs/wechat.log"),
+            'file' => env('WECHAT_LOG_FILE', app()->getRuntimePath()."log/wechat.log"),
         ],
     ],
 
