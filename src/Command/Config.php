@@ -13,7 +13,6 @@ namespace Naixiaoxin\ThinkWechat\Command;
 
 use think\console\Command;
 use think\console\Input;
-use think\console\input\Option;
 use think\console\Output;
 
 class Config extends Command
@@ -25,8 +24,7 @@ class Config extends Command
     protected function configure()
     {
         $this->setName('wechat:config')
-             ->setDescription('send wechat config to config dir')
-        ;
+            ->setDescription('send wechat config to config dir');
     }
 
     protected function execute(Input $input, Output $output)

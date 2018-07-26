@@ -1,7 +1,5 @@
 <?php
 /**
- *
- *
  * @author 耐小心<i@naixiaoxin.com>
  * @copyright 2017-2018 耐小心
  */
@@ -9,16 +7,15 @@
 namespace Naixiaoxin\ThinkWechat;
 
 use think\Facade as ThinkFacade;
+
 /**
  * Class Facade.
- *
  * @author overtrue <i@overtrue.me>
  */
 class Facade extends ThinkFacade
 {
     /**
      * 默认为 Server.
-     *
      * @return string
      */
     public static function getFacadeAccessor()
@@ -29,40 +26,40 @@ class Facade extends ThinkFacade
     /**
      * @return \EasyWeChat\OfficialAccount\Application
      */
-    public static function officialAccount($name = '')
+    public static function officialAccount($config = [], $name = '')
     {
-        return $name ? app('wechat.official_account.' . $name) : app('wechat.official_account');
+        return $name ? app('wechat.official_account.' . $name, $config) : app('wechat.official_account', $config);
     }
 
     /**
      * @return \EasyWeChat\Work\Application
      */
-    public static function work($name = '')
+    public static function work($config = [], $name = '')
     {
-        return $name ? app('wechat.work.' . $name) : app('wechat.work');
+        return $name ? app('wechat.work.' . $name, $config) : app('wechat.work', $config);
     }
 
     /**
      * @return \EasyWeChat\Payment\Application
      */
-    public static function payment($name = '')
+    public static function payment($config = [], $name = '')
     {
-        return $name ? app('wechat.payment.' . $name) : app('wechat.payment');
+        return $name ? app('wechat.payment.' . $name, $config) : app('wechat.payment', $config);
     }
 
     /**
      * @return \EasyWeChat\MiniProgram\Application
      */
-    public static function miniProgram($name = '')
+    public static function miniProgram($config = [], $name = '')
     {
-        return $name ? app('wechat.mini_program.' . $name) : app('wechat.mini_program');
+        return $name ? app('wechat.mini_program.' . $name, $config) : app('wechat.mini_program', $config);
     }
 
     /**
      * @return \EasyWeChat\OpenPlatform\Application
      */
-    public static function openPlatform($name = '')
+    public static function openPlatform($config = [], $name = '')
     {
-        return $name ? app('wechat.open_platform.' . $name) : app('wechat.open_platform');
+        return $name ? app('wechat.open_platform.' . $name, $config) : app('wechat.open_platform', $config);
     }
 }

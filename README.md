@@ -52,7 +52,13 @@ class Note extends Controller
 #### 使用facade
 ```php
 use Naixiaoxin\ThinkWechat\Facade;
-$officialAccount = Facade::officialAccount(); // 公众号
+// 动态载入配置  
+// $config = [ 'app_id' = '' ...]
+// $officialAccount = app('wechat.official_account',['config' => $config]); 
+// $officialAccount = Facade::officialAccount($config);
+
+$officialAccount = Facade::officialAccount();  // 公众号
+
 $work = Facade::work(); // 企业微信
 $payment = Facade::payment(); // 微信支付
 $openPlatform = Facade::openPlatform(); // 开放平台
