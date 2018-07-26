@@ -52,13 +52,8 @@ class Note extends Controller
 #### 使用facade
 ```php
 use Naixiaoxin\ThinkWechat\Facade;
-// 动态载入配置  
-// $config = [ 'app_id' = '' ...]
-// $officialAccount = app('wechat.official_account',['config' => $config]); 
-// $officialAccount = Facade::officialAccount($config);
 
 $officialAccount = Facade::officialAccount();  // 公众号
-
 $work = Facade::work(); // 企业微信
 $payment = Facade::payment(); // 微信支付
 $openPlatform = Facade::openPlatform(); // 开放平台
@@ -67,6 +62,11 @@ $miniProgram = Facade::miniProgram(); // 小程序
 以上均支持传入自定义账号:例如
 ```php
 $officialAccount = Facade::officialAccount('test'); // 公众号
+```
+
+以上均支持传入自定义账号+配置(注:这里的config和配置文件中账号的格式相同):例如
+```php
+$officialAccount = Facade::officialAccount('',$config); // 公众号
 ```
 
 ### Oauth登录中间件(ThinkPHP5.1.6+)

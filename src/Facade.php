@@ -10,12 +10,14 @@ use think\Facade as ThinkFacade;
 
 /**
  * Class Facade.
+ *
  * @author overtrue <i@overtrue.me>
  */
 class Facade extends ThinkFacade
 {
     /**
      * 默认为 Server.
+     *
      * @return string
      */
     public static function getFacadeAccessor()
@@ -26,7 +28,7 @@ class Facade extends ThinkFacade
     /**
      * @return \EasyWeChat\OfficialAccount\Application
      */
-    public static function officialAccount($config = [], $name = '')
+    public static function officialAccount($name = '',$config = [])
     {
         return $name ? app('wechat.official_account.' . $name, $config) : app('wechat.official_account', $config);
     }
@@ -34,7 +36,7 @@ class Facade extends ThinkFacade
     /**
      * @return \EasyWeChat\Work\Application
      */
-    public static function work($config = [], $name = '')
+    public static function work($name = '',$config = [])
     {
         return $name ? app('wechat.work.' . $name, $config) : app('wechat.work', $config);
     }
@@ -42,7 +44,7 @@ class Facade extends ThinkFacade
     /**
      * @return \EasyWeChat\Payment\Application
      */
-    public static function payment($config = [], $name = '')
+    public static function payment($name = '',$config = [])
     {
         return $name ? app('wechat.payment.' . $name, $config) : app('wechat.payment', $config);
     }
@@ -50,7 +52,7 @@ class Facade extends ThinkFacade
     /**
      * @return \EasyWeChat\MiniProgram\Application
      */
-    public static function miniProgram($config = [], $name = '')
+    public static function miniProgram($name = '',$config = [])
     {
         return $name ? app('wechat.mini_program.' . $name, $config) : app('wechat.mini_program', $config);
     }
@@ -58,7 +60,7 @@ class Facade extends ThinkFacade
     /**
      * @return \EasyWeChat\OpenPlatform\Application
      */
-    public static function openPlatform($config = [], $name = '')
+    public static function openPlatform($name = '',$config = [])
     {
         return $name ? app('wechat.open_platform.' . $name, $config) : app('wechat.open_platform', $config);
     }
