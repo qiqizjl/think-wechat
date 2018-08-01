@@ -41,7 +41,7 @@ class AppInit
             }
             $configs = config('wechat.' . $name);
             foreach ($configs as $config_name => $module_default) {
-                bind('wechat.' . $name . '.' . $config_name, function ($config) use ($app, $module_default, $wechat_default) {
+                bind('wechat.' . $name . '.' . $config_name, function ($config = [] ) use ($app, $module_default, $wechat_default) {
                     //合并配置文件
                     $account_config = array_merge($module_default, $wechat_default, $config);
                     $account_app = app($app, ['config' => $account_config]);
