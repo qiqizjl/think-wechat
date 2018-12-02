@@ -80,7 +80,7 @@ $officialAccount = Facade::officialAccount('',$config); // 公众号
 
 关于ThinkPHP5.1的中间件使用方法不在叙述，详情可以查看[官方文档](https://www.kancloud.cn/manual/thinkphp5_1/564279)
 
-#### 该中间件支持以下格式
+#### 中间件参数说明
 由于ThinkPHP中间件只支持一个参数，所以以`:`做分割
 
 支持传入account账号别名以及scope类型
