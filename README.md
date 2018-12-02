@@ -80,9 +80,20 @@ $officialAccount = Facade::officialAccount('',$config); // 公众号
 
 关于ThinkPHP5.1的中间件使用方法不在叙述，详情可以查看[官方文档](https://www.kancloud.cn/manual/thinkphp5_1/564279)
 
-#### 该中间件支持以下两个参数
-1. name:多账号中的账号名称 默认是default
-2. scopes: 登录权限 默认账号中配置的 数组
+#### 该中间件支持以下格式
+由于ThinkPHP中间件只支持一个参数，所以以`:`做分割
+
+支持传入account账号别名以及scope类型
+
+若不传入`account`，会使用`default`账号
+
+若不传入`scope`，会使用配置文件中的`oauth.scope`
+
+支持一下两种方式
+```
+default:snsapi_base
+snsapi_base
+```
 
 ### HOOK
 > 你可以监听相应的事件，并对事件发生后执行相应的操作。
