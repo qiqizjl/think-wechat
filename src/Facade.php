@@ -30,7 +30,7 @@ class Facade extends ThinkFacade
      */
     public static function officialAccount($name = '',$config = [])
     {
-        return $name ? app('wechat.official_account.' . $name, $config) : app('wechat.official_account', $config);
+        return $name ? app('wechat.official_account.' . $name, ["config"=>$config]) : app('wechat.official_account',  ["config"=>$config]);
     }
 
     /**
@@ -38,7 +38,7 @@ class Facade extends ThinkFacade
      */
     public static function work($name = '',$config = [])
     {
-        return $name ? app('wechat.work.' . $name, $config) : app('wechat.work', $config);
+        return $name ? app('wechat.work.' . $name,  ["config"=>$config]) : app('wechat.work',  ["config"=>$config]);
     }
 
     /**
@@ -46,7 +46,7 @@ class Facade extends ThinkFacade
      */
     public static function payment($name = '',$config = [])
     {
-        return $name ? app('wechat.payment.' . $name, $config) : app('wechat.payment', $config);
+        return $name ? app('wechat.payment.' . $name,  ["config"=>$config]) : app('wechat.payment',  ["config"=>$config]);
     }
 
     /**
@@ -54,7 +54,7 @@ class Facade extends ThinkFacade
      */
     public static function miniProgram($name = '',$config = [])
     {
-        return $name ? app('wechat.mini_program.' . $name, $config) : app('wechat.mini_program', $config);
+        return $name ? app('wechat.mini_program.' . $name,  ["config"=>$config]) : app('wechat.mini_program',  ["config"=>$config]);
     }
 
     /**
@@ -62,6 +62,6 @@ class Facade extends ThinkFacade
      */
     public static function openPlatform($name = '',$config = [])
     {
-        return $name ? app('wechat.open_platform.' . $name, $config) : app('wechat.open_platform', $config);
+        return $name ? app('wechat.open_platform.' . $name,  ["config"=>$config]) : app('wechat.open_platform',  ["config"=>$config]);
     }
 }
