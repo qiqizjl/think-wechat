@@ -29,7 +29,7 @@ class AppInit
      *  useing
      *      app( $module_name)
      *  or
-     *      app( $module_name, [ 'config' => [ app_id => 'test' ] ])
+     *      app( $module_name, [ app_id => 'test' ])
      */
 
     public function run()
