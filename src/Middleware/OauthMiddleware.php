@@ -37,7 +37,10 @@ class OauthMiddleware
         /** @var Application $officialAccount */
         $officialAccount = app(\sprintf('wechat.official_account.%s', $account));
         if (!$scopes) {
-            $scopes = config(\sprintf('wechat.official_account.%s.oauth.scopes', $account), ['snsapi_base']);
+            $scopes = config(\sprintf('wechat.official_account.%s.oauth.scopes', $account));
+        }
+        if (!$scopes){
+            $scopes = ['snsapi_base'];
         }
         if (is_string($scopes)) {
             $scopes = array_map('trim', explode(',', $scopes));
