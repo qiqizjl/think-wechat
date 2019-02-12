@@ -1,9 +1,8 @@
 {
     "name": "naixiaoxin/think-wechat",
     "description": "EasyWechat For Thnkphp5.1+",
-    "type": "library",
+    "type": "think-extend",
     "keywords": ["wechat", "weixin","easywechat","thinkphp","think", "sdk"],
-    "license": "MIT",
     "require": {
         "overtrue/wechat": "~4.0",
         "topthink/framework": "~5.1"
@@ -20,5 +19,10 @@
         "files": [
             "src/helper.php"
         ]
-    }
+    },
+    "extra": {
+        "think-config": {
+          "wechat": "src/config.php"
+        }
+      }
 }
