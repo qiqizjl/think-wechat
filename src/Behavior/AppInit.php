@@ -12,6 +12,7 @@ use EasyWeChat\OfficialAccount\Application as OfficialAccount;
 use EasyWeChat\OpenPlatform\Application as OpenPlatform;
 use EasyWeChat\Payment\Application as Payment;
 use EasyWeChat\Work\Application as Work;
+use EasyWeChat\OpenWork\Application as OpenWork;
 use Naixiaoxin\ThinkWechat\CacheBridge;
 
 class AppInit
@@ -23,6 +24,7 @@ class AppInit
             'mini_program' => MiniProgram::class,
             'payment' => Payment::class,
             'open_platform' => OpenPlatform::class,
+            'open_platform' => OpenWork::class,
         ];
 
     /*

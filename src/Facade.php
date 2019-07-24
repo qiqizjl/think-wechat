@@ -64,4 +64,14 @@ class Facade extends ThinkFacade
     {
         return $name ? app('wechat.open_platform.' . $name,  ["config"=>$config]) : app('wechat.open_platform',  ["config"=>$config]);
     }
+
+
+    /**
+     * @return \EasyWeChat\OpenWork\Application
+     */
+    public static function openWork($name = '',$config = [])
+    {
+        return $name ? app('wechat.open_work.' . $name,  ["config"=>$config]) : app('wechat.open_work',  ["config"=>$config]);
+    }
+
 }
