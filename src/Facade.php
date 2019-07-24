@@ -74,4 +74,12 @@ class Facade extends ThinkFacade
         return $name ? app('wechat.open_work.' . $name,  ["config"=>$config]) : app('wechat.open_work',  ["config"=>$config]);
     }
 
+    /**
+     * @return \EasyWeChat\MicroMerchant\Application
+     */
+    public static function microMerchant($name = '',$config = [])
+    {
+        return $name ? app('wechat.micro_merchant.' . $name,  ["config"=>$config]) : app('wechat.micro_merchant',  ["config"=>$config]);
+    }
+
 }

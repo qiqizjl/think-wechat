@@ -102,10 +102,19 @@ return [
     //],
 
 
-    //企业微信
+    //企业开放平台
     //'open_work'             => [
     //    'default' => [
     //        //参考EasyWechat官方文档
+    //        //https://www.easywechat.com/docs/4.1/open-work/index
+    //    ],
+    //],
+
+    //小微商户
+    //'micro_merchant'   => [
+    //    'default' => [
+    //        //参考EasyWechat官方文档
+    //        //https://www.easywechat.com/docs/4.1/micro-merchant/index
     //    ],
     //],
 ];

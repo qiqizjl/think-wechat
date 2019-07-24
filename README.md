@@ -53,7 +53,8 @@ $work = Facade::work(); // 企业微信
 $payment = Facade::payment(); // 微信支付
 $openPlatform = Facade::openPlatform(); // 开放平台
 $miniProgram = Facade::miniProgram(); // 小程序  
-$openWork = Facade::openWork(); // 小程序  
+$openWork = Facade::openWork(); // 企业微信第三方服务商  
+$microMerchant = Facade::microMerchant(); // 小微商户  
 ```
 以上均支持传入自定义账号:例如
 ```php
