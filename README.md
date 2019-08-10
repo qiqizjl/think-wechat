@@ -72,7 +72,7 @@ $officialAccount = Facade::officialAccount('',$config); // 公众号
 \think\facade\Route::rule('user','usere')->middleware(\Naixiaoxin\ThinkWechat\Middleware\OauthMiddleware::class);
 ```
 
-上面的路由定义了 /user 是需要微信授权的，那么在这条路由的回调 或 控制器对应的方法里， 你就可以从 session('wechat.oauth_user.default') 拿到已经授权的用户信息了。
+上面的路由定义了 /user 是需要微信授权的，那么在这条路由的回调 或 控制器对应的方法里， 你就可以从 session('wechat_oauth_user_default') 拿到已经授权的用户信息了。
 
 
 关于ThinkPHP5.1的中间件使用方法不在叙述，详情可以查看[官方文档](https://www.kancloud.cn/manual/thinkphp5_1/564279)
@@ -98,7 +98,7 @@ snsapi_base
 
 ```php
 // 该事件有以下属性
-$params['user']; // 同 session('wechat.oauth_user.default') 一样
+$params['user']; // 同 session('wechat_oauth_user_default') 一样
 $params['is_new']; // 是不是新的会话（第一次创建 session 时为 true）
 ```
 更多 SDK 的具体使用请参考：https://easywechat.com
