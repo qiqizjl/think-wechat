@@ -25,7 +25,7 @@ class AppInit
             'mini_program' => MiniProgram::class,
             'payment' => Payment::class,
             'open_platform' => OpenPlatform::class,
-            'open_platform' => OpenWork::class,
+            'open_work' => OpenWork::class,
             'micro_merchant' => MicroMerchant::class,
         ];
 
