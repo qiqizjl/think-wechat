@@ -1,10 +1,10 @@
 # thinkphp-wechat
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fqiqizjl%2Fthink-wechat.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fqiqizjl%2Fthink-wechat?ref=badge_shield)
 
-微信SDK For ThinkPHP 5.1+ 基于[overtrue/wechat](https://github.com/overtrue/wechat)
+微信SDK For ThinkPHP 5.1 基于[overtrue/wechat](https://github.com/overtrue/wechat)
 
 ## 框架要求
-ThinkPHP5.1+(中间件要求支持ThinkPHP5.1.6+)
+ThinkPHP5.1(中间件要求支持ThinkPHP5.1.6+)
 
 ## 安装
 ~~~
