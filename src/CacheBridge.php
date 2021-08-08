@@ -42,14 +42,19 @@ class CacheBridge implements CacheInterface
 
     public function getMultiple($keys, $default = null)
     {
+        throw new \Exception("not support");
     }
 
     public function setMultiple($values, $ttl = null)
     {
+        throw new \Exception("not support");
     }
 
     public function deleteMultiple($keys)
     {
+        foreach ($keys as $key) {
+            $this->delete($keys);
+        }
     }
 
     public function has($key)
